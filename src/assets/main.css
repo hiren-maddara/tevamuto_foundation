@@ -1,0 +1,18 @@
+@import './base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+    cursor: pointer;
+}
+
+.sticky_nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    opacity: 0.9;
+
+    @apply bg-white shadow-sm
+}
