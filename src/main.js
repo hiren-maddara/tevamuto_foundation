@@ -10,6 +10,8 @@ app.use(router);
 
 app.mount("#app");
 
+// console.log(import.meta.env.VITE_SUPABASE_URL);
+
 document.addEventListener("DOMContentLoaded", (e) => {
   const header = document.querySelector(".navbar");
   const headerHeight = header.getBoundingClientRect().height;

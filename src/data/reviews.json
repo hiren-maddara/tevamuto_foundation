@@ -1,0 +1,50 @@
+[
+    {
+        "id": "r1",
+        "name": "Gladys Leon",
+        "info": "Head of SEO, Google Inc",
+        "img_url": "",
+        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
+
+    },
+    {
+        "id": "r2",
+        "name": "Olagys Leopan",
+        "info": "Manager, Centenary",
+        "img_url": "",
+        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
+
+    },
+    {
+        "id": "r3",
+        "name": "John Lenon",
+        "info": "Sami Raimi, Doctor Strange",
+        "img_url": "",
+        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
+
+    },
+    {
+        "id": "r4",
+        "name": "Arold Schwazganner",
+        "info": "The terminator, Future",
+        "img_url": "",
+        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
+
+    },
+    {
+        "id": "r5",
+        "name": "Dead lake",
+        "info": "CEO, Funcom",
+        "img_url": "",
+        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
+
+    },
+    {
+        "id": "r6",
+        "name": "Hiren Maddara",
+        "info": "Chief dreamer, Big leagues",
+        "img_url": "",
+        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
+
+    }
+]

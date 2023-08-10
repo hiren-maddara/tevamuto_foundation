@@ -1,3 +1,29 @@
+<script setup>
+  import { computed, ref } from 'vue'
+import { useRouter, useRoute } from 'vue-router';
+import Skeleton from '../components/Skeleton.vue';
+
+const router = useRouter()
+
+const aboutData = ref([])
+const isLoadingData = ref(true)
+
+const loadAboutData = async () => {
+  aboutData.value = (await import('@/data/about.json')).default
+  isLoadingData.value = false
+}
+
+const formatWord = w => w.replace(w[0], w[0].toUpperCase())
+
+loadAboutData()
+
+const renderAboutData = computed(() => {
+  return aboutData.value
+})
+
+const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+</script>
+
 <template>
     <section class="text-gray-600 body-font">
         <div class="container px-5 pb-24 pt-6 mx-auto">
@@ -6,255 +32,58 @@
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
             <p class="lg:w-2/3 lg:mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
             </div>
-            <div class="flex flex-wrap">
 
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+            <div v-if="isLoadingData" class="flex flex-wrap">
+              <Skeleton v-for="n in 8" :key="n" class="xl:w-1/4 lg:w-1/2 md:w-full" prefer="card" />
+            </div>
+
+            <div v-else class="flex flex-wrap">
+
+                <div v-for="article in renderAboutData" :key="article.id" class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                     <article class="flex bg-white transition hover:shadow-xl">
                         <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
                             <time
-                            datetime="2022-10-10"
+                            :datetime="(new Date()).toUTCString()"
                             class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
                             >
-                            <span>2022</span>
+                            <span>{{ (new Date()).getFullYear() }}</span>
                             <span class="w-px flex-1 bg-gray-900/10"></span>
-                            <span>Oct 10</span>
+                            <span>{{ `${months[(new Date()).getMonth()]} ${(new Date()).getDate()}` }}</span>
                             </time>
                         </div>
 
                         <div class="hidden sm:block sm:basis-56">
                             <img
-                            alt="Guitar"
-                            src="@/assets/img/img-3.jpg"
+                            :alt="article.category"
+                            :src="`../src/assets/img/${article.img}`"
                             class="aspect-square h-full w-full object-cover"
                             />
                         </div>
 
                         <div class="flex flex-1 flex-col justify-between">
                             <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                            <a href="#">
+                            <a @click="router.push(`/article/${article.id}`)">
                                 <h3 class="font-bold uppercase text-gray-900">
-                                Finding the right guitar for your style - 5 tips
+                                {{ article.title }}
                                 </h3>
                             </a>
 
                             <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-                                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-                                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-                                Molestias explicabo corporis voluptatem?
+                                {{ article.summary }}
                             </p>
                             </div>
 
                             <div class="sm:flex sm:items-end sm:justify-end">
                             <a
-                                href="#"
-                                class="block bg-indigo-400 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
+                                @click="router.push(`/article/${article.id}`)"
+                                class="block bg-indigo-400 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-indigo-500"
                             >
-                                Read Blog
+                                Read article
                             </a>
                             </div>
                         </div>
                     </article>
                 </div>
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <article class="flex bg-white transition hover:shadow-xl">
-                        <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
-                            <time
-                            datetime="2022-10-10"
-                            class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
-                            >
-                            <span>2022</span>
-                            <span class="w-px flex-1 bg-gray-900/10"></span>
-                            <span>Oct 10</span>
-                            </time>
-                        </div>
-
-                        <div class="hidden sm:block sm:basis-56">
-                            <img
-                            alt="Guitar"
-                            src="@/assets/img/img-3.jpg"
-                            class="aspect-square h-full w-full object-cover"
-                            />
-                        </div>
-
-                        <div class="flex flex-1 flex-col justify-between">
-                            <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                            <a href="#">
-                                <h3 class="font-bold uppercase text-gray-900">
-                                Finding the right guitar for your style - 5 tips
-                                </h3>
-                            </a>
-
-                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-                                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-                                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-                                Molestias explicabo corporis voluptatem?
-                            </p>
-                            </div>
-
-                            <div class="sm:flex sm:items-end sm:justify-end">
-                            <a
-                                href="#"
-                                class="block bg-indigo-400 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
-                            >
-                                Read Blog
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <article class="flex bg-white transition hover:shadow-xl">
-                        <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
-                            <time
-                            datetime="2022-10-10"
-                            class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
-                            >
-                            <span>2022</span>
-                            <span class="w-px flex-1 bg-gray-900/10"></span>
-                            <span>Oct 10</span>
-                            </time>
-                        </div>
-
-                        <div class="hidden sm:block sm:basis-56">
-                            <img
-                            alt="Guitar"
-                            src="@/assets/img/img-3.jpg"
-                            class="aspect-square h-full w-full object-cover"
-                            />
-                        </div>
-
-                        <div class="flex flex-1 flex-col justify-between">
-                            <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                            <a href="#">
-                                <h3 class="font-bold uppercase text-gray-900">
-                                Finding the right guitar for your style - 5 tips
-                                </h3>
-                            </a>
-
-                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-                                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-                                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-                                Molestias explicabo corporis voluptatem?
-                            </p>
-                            </div>
-
-                            <div class="sm:flex sm:items-end sm:justify-end">
-                            <a
-                                href="#"
-                                class="block bg-indigo-400 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
-                            >
-                                Read Blog
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <article class="flex bg-white transition hover:shadow-xl">
-                        <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
-                            <time
-                            datetime="2022-10-10"
-                            class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
-                            >
-                            <span>2022</span>
-                            <span class="w-px flex-1 bg-gray-900/10"></span>
-                            <span>Oct 10</span>
-                            </time>
-                        </div>
-
-                        <div class="hidden sm:block sm:basis-56">
-                            <img
-                            alt="Guitar"
-                            src="@/assets/img/img-3.jpg"
-                            class="aspect-square h-full w-full object-cover"
-                            />
-                        </div>
-
-                        <div class="flex flex-1 flex-col justify-between">
-                            <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                            <a href="#">
-                                <h3 class="font-bold uppercase text-gray-900">
-                                Finding the right guitar for your style - 5 tips
-                                </h3>
-                            </a>
-
-                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-                                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-                                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-                                Molestias explicabo corporis voluptatem?
-                            </p>
-                            </div>
-
-                            <div class="sm:flex sm:items-end sm:justify-end">
-                            <a
-                                href="#"
-                                class="block bg-indigo-400 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
-                            >
-                                Read Blog
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <article class="flex bg-white transition hover:shadow-xl">
-                        <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
-                            <time
-                            datetime="2022-10-10"
-                            class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
-                            >
-                            <span>2022</span>
-                            <span class="w-px flex-1 bg-gray-900/10"></span>
-                            <span>Oct 10</span>
-                            </time>
-                        </div>
-
-                        <div class="hidden sm:block sm:basis-56">
-                            <img
-                            alt="Guitar"
-                            src="@/assets/img/img-3.jpg"
-                            class="aspect-square h-full w-full object-cover"
-                            />
-                        </div>
-
-                        <div class="flex flex-1 flex-col justify-between">
-                            <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                            <a href="#">
-                                <h3 class="font-bold uppercase text-gray-900">
-                                Finding the right guitar for your style - 5 tips
-                                </h3>
-                            </a>
-
-                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
-                                sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
-                                voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
-                                Molestias explicabo corporis voluptatem?
-                            </p>
-                            </div>
-
-                            <div class="sm:flex sm:items-end sm:justify-end">
-                            <a
-                                href="#"
-                                class="block bg-indigo-400 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
-                            >
-                                Read Blog
-                            </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                
 
             </div>
             <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">More articles</button>
