@@ -1,3 +1,30 @@
+<script setup>
+  import {ref, watch, computed} from 'vue'
+  import { useRouter } from 'vue-router'
+  import Skeleton from '../Skeleton.vue'
+  import supabase from "@/data/supabase.js"
+
+  const router = useRouter()
+
+  const projectsData = ref([])
+  const isLoading = ref(true)
+
+  async function loadData(){
+    const {data, error} = await supabase.from('projects').select().order('created_at', { ascending: false })
+    if(error) alert(error)
+    projectsData.value = data
+    isLoading.value = false
+  }
+  await loadData()
+
+  const renderProjects = computed(() => projectsData.value.slice(5))
+
+  // watch(projectsData, () => console.log([...projectsData.value]))
+  // watch(renderProjects, () => console.log(renderProjects.value))
+  
+
+</script>
+
 <template>
     <section class="container px-5 py-24 mx-auto text-gray-800">
           <div class="flex flex-wrap w-full mb-20">
@@ -7,56 +34,31 @@
             </div>
             <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
           </div>
-          <div class="flex flex-wrap -m-4">
-            <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-gray-100 p-6 rounded-lg">
-                <img class="h-56 rounded w-full object-cover object-center mb-6" src="@/assets/img/img-1.jpg" alt="content">
-                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">HEALTH</h3>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Hospital</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-              </div>
-            </div>
-            <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-gray-100 p-6 rounded-lg">
-                <img class="h-56 rounded w-full object-cover object-center mb-6" src="@/assets/img/img-1.jpg" alt="content">
-                <h3 class="tracking-widest text-indigo-500 text-xs font-medium uppercase title-font">EDUCATION</h3>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Classroom</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                <a class="text-indigo-500 inline-flex items-center transition-all hover:gap-1">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
 
-            <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-gray-100 p-6 rounded-lg">
-                  <img class="h-56 rounded w-full object-cover object-center mb-6" src="@/assets/img/img-1.jpg" alt="content">
-                  <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">ENVIRONMENT</h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Community tour</h2>
-                  <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                  <a class="cursor-pointer text-indigo-500 inline-flex items-center transition-all duration-1000 hover:gap-1">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                </div>
-            </div>
-
-            <div class="xl:w-1/4 md:w-1/2 p-4">
-              <div class="bg-gray-100 p-6 rounded-lg">
-                <img class="h-56 rounded w-full object-cover object-center mb-6" src="@/assets/img/img-1.jpg" alt="content">
-                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">HEALTH</h3>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Medical Camp</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                <a class="cursor-pointer text-indigo-500 inline-flex items-center transition-all duration-1000 hover:gap-1">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
+          <div v-if="isLoading" class="flex flex-wrap -m-4">
+            <div v-for="n in 4" class="xl:w-1/4 md:w-1/2 p-4">
+              <Skeleton prefer="card" />
             </div>
           </div>
+          <div v-else class="flex flex-wrap -m-4">
+
+            <div v-for="project in renderProjects" :key="project.article_id" class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-56 rounded w-full object-cover object-center mb-6" :src="`/src/assets/img/${project.img}`" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font uppercase">{{ project.category }}</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{project.main_tag}}</h2>
+                <p class="leading-relaxed text-base">{{project.summary}}</p>
+                <a @click="router.push(`/project/article/${project.article_id}`)" class="cursor-pointer text-indigo-500 inline-flex items-center transition-all duration-1000 hover:gap-1">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+          <button @click="router.push('/projects')" class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Go see all projects</button>
+      
     </section>
 </template>
