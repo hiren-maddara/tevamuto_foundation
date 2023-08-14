@@ -33,18 +33,15 @@ const renderAboutData = computed(() => {
         <h2
           class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 uppercase"
         >
-          about us
+        About Us
         </h2>
         <h1
           class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
         >
-          Master Cleanse Reliac Heirloom
+          Community Building and Transformation
         </h1>
         <p class="lg:w-2/3 lg:mx-auto leading-relaxed text-base">
-          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-          gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-          heard of them man bun deep jianbing selfies heirloom prism food truck
-          ugh squid celiac humblebrag.
+          Through community events, workshops, and cultural celebrations, the organization fosters a sense of belonging and togetherness. By facilitating interactions among diverse groups, CommunityCare Alliance nurtures an environment where people can learn from one another and celebrate their differences.
         </p>
       </div>
 

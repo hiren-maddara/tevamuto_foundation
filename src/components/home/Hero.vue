@@ -26,8 +26,7 @@
                         TEVAMUTO FOUNDATION
                     </h2>
                     <p class="text-base text-gray-700 md:text-lg">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam,
-                        eaque ipsa quae.
+                        Empowering Communities, Enriching lives while Inspiring Change and igniting Hope
                     </p>
                 </div>
                 <div class="flex items-center sm:justify-center">
