@@ -15,7 +15,7 @@
 
               <div class="mt-8">
                 <a href="" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
-                  0151 475 4450
+                  +256704634285
                 </a>
 
                 <a href="" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
@@ -23,7 +23,7 @@
                 </a>
 
                 <a href="" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
-                  tevamutofoundation@gmail.com
+                  wabalanda@gmail.com
                 </a>
 
                 <address class="mt-2 not-italic">
