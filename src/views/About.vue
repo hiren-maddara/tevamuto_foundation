@@ -1,5 +1,5 @@
 <script setup>
-  import { computed, ref } from 'vue'
+  import { computed, ref, watch} from 'vue'
 import { useRouter, useRoute } from 'vue-router';
 import Skeleton from '../components/Skeleton.vue';
 import supabase from '@/data/supabase.js'
