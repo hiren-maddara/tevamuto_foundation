@@ -3,7 +3,7 @@
 import { useRouter, useRoute } from 'vue-router';
 import Skeleton from '../components/Skeleton.vue';
 import supabase from '@/data/supabase.js'
-
+import Mission from "@/components/projects/Mission.vue"
 const router = useRouter()
 
 const aboutData = ref([])
