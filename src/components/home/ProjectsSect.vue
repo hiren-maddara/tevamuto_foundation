@@ -44,7 +44,8 @@
 
             <div v-for="project in renderProjects" :key="project.article_id" class="xl:w-1/4 md:w-1/2 p-4">
               <div class="bg-gray-100 p-6 rounded-lg">
-                <img class="h-56 rounded w-full object-cover object-center mb-6" :src="`/src/assets/img/${project.img}`" alt="content">
+                <img class="h-56 rounded w-full object-cover object-center mb-6" src="https://fqlchsjtnuyloculwgdg.supabase.co/storage/v1/object/sign/projects/img-1.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9pbWctMS5qcGciLCJpYXQiOjE2OTIxODg1NTYsImV4cCI6MjAwNzU0ODU1Nn0.S4WlKAK6u_cIu5xO6pnzWgyZzvewzQmpUphwDiqZID0" alt="content">
+                <!-- <img class="h-56 rounded w-full object-cover object-center mb-6" :src="`/src/assets/img/${project.img}`" alt="content"> -->
                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font uppercase">{{ project.category }}</h3>
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{project.main_tag}}</h2>
                 <p class="leading-relaxed text-base">{{project.summary}}</p>
