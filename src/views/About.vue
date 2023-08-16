@@ -1,27 +1,31 @@
 <script setup>
-  import { computed, ref } from 'vue'
-import { useRouter, useRoute } from 'vue-router';
-import Skeleton from '../components/Skeleton.vue';
+
+import { ref, watch, computed } from 'vue'
+import { useRouter } from 'vue-router'
+import Skeleton from '@/components/Skeleton.vue'
+import supabase from "@/data/supabase.js"
 
 const router = useRouter()
 
 const aboutData = ref([])
-const isLoadingData = ref(true)
+const isLoading = ref(true)
 
-const loadAboutData = async () => {
-  aboutData.value = (await import('@/data/about.json')).default
-  isLoadingData.value = false
+async function loadData() {
+  const { data, error } = await supabase.from('about').select().order('created_at', { ascending: false })
+  if (error) alert(error)
+  aboutData.value = data
+  isLoading.value = false
 }
+await loadData()
 
-const formatWord = w => w.replace(w[0], w[0].toUpperCase())
+// const renderabout = computed(() => aboutData.value.slice(5))
+// watch(aboutData, () => console.log([...aboutData.value]))
+// watch(renderabout, () => console.log(renderabout.value))
 
-loadAboutData()
-
-const renderAboutData = computed(() => {
-  return aboutData.value
-})
 
 const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+watch(aboutData, console.log(aboutData.value))
 </script>
 
 <template>
@@ -39,16 +43,16 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 
             <div v-else class="flex flex-wrap">
 
-                <div v-for="article in renderAboutData" :key="article.id" class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                <div v-for="article in aboutData" :key="article.article_id" class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                     <article class="flex bg-white transition hover:shadow-xl">
                         <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
                             <time
-                            :datetime="(new Date()).toUTCString()"
+                            :datetime="(new Date(article.created_at)).getUTCDate()"
                             class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
                             >
-                            <span>{{ (new Date()).getFullYear() }}</span>
+                            <span>{{ (new Date(article.created_at)).getUTCDate() }}</span>
                             <span class="w-px flex-1 bg-gray-900/10"></span>
-                            <span>{{ `${months[(new Date()).getMonth()]} ${(new Date()).getDate()}` }}</span>
+                            <span>{{ `${months[(new Date(article.created_at)).getMonth()]} ${(new Date(article.created_at)).getDate()}` }}</span>
                             </time>
                         </div>
 
@@ -62,7 +66,7 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 
                         <div class="flex flex-1 flex-col justify-between">
                             <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                            <a @click="router.push(`/article/${article.id}`)">
+                            <a @click="router.push(`/article/${article.article_id}`)">
                                 <h3 class="font-bold uppercase text-gray-900">
                                 {{ article.title }}
                                 </h3>
@@ -75,7 +79,7 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 
                             <div class="sm:flex sm:items-end sm:justify-end">
                             <a
-                                @click="router.push(`/article/${article.id}`)"
+                                @click="router.push(`/about/article/${article.article_id}`)"
                                 class="block bg-indigo-400 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-indigo-500"
                             >
                                 Read article
