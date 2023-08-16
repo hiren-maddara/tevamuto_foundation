@@ -4,7 +4,7 @@
 <template>
     <!-- personal content -->
       <section class="text-gray-600 body-font px-5">
-        <div class="flex flex-col text-left w-full mb-5">
+        <div class="flex flex-col text-left w-full">
             <h2 class="lg:mx-auto text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 uppercase">A word from the CEO</h2>
             <h1 class=" lg:mx-auto sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">The community that has us</h1>
         </div>
@@ -24,7 +24,7 @@
 
                 </div>
                 <div class="flex flex-col items-center text-center justify-center">
-                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Wabalanda Wilson</h2>
                   <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
                   <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
                 </div>

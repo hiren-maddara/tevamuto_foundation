@@ -57,7 +57,7 @@ const scrollToTop = () => window.scrollTo({
                 <a class="text-gray-600 hover:text-gray-800">Blog</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">The CEO</a>
+                <a class="text-gray-600 hover:text-gray-800">The C.E.O</a>
               </li>
               <li>
                 <a class="text-gray-600 hover:text-gray-800">Articles</a>
@@ -69,16 +69,16 @@ const scrollToTop = () => window.scrollTo({
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONTACTS</h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800">+256708997997</a>
+                <a class="text-gray-600 hover:text-gray-800">+256704634285</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">tevamuto@gmail.com</a>
+                <a class="text-gray-600 hover:text-gray-800">wabalanda@gmail.com</a>
               </li>
               <li>
                 <a class="text-gray-600 hover:text-gray-800">IG: @tvmfoundation</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Twitter: @tvmF</a>
+                <a class="text-gray-600 hover:text-gray-800">Twitter: @tvmfoundation</a>
               </li>
             </nav>
           </div>

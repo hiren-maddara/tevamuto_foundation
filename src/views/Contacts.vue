@@ -3,15 +3,15 @@
       <div class="container px-5 py-18 pt-6 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">OUR TEAM</h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Collaboration is the heartbeat of our team. By fostering an environment of open communication, idea sharing, and mutual respect, we amplify each other's strengths, resulting in a collective synergy that propels us forward.</p>
         </div>
         <div class="flex flex-wrap -m-4">
           <div class="p-4 lg:w-1/4 md:w-1/2">
             <div class="h-full flex flex-col items-center text-center">
               <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="@/assets/img/user.jpg">
               <div class="w-full">
-                <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
-                <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                <h2 class="title-font font-medium text-lg text-gray-900">Wabalanda Wilson </h2>
+                <h3 class="text-gray-500 mb-3">Founder </h3>
                 <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                 <span class="inline-flex">
                   <a class="text-gray-500">
@@ -122,19 +122,17 @@
           <div class="mx-auto max-w-screen-xl px-6 md:px-16 lg:px-20 py-16 sm:px-6">
             <div class="flex flex-col text-left lg:text-center w-full mb-16">
                 <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 uppercase">REACH OUT</h2>
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Here is where you can send your suggestion</h1>
                 </div>
             <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
               <div class="lg:col-span-2 lg:py-12">
                 <p class="max-w-xl text-lg">
-                  At the same time, the fact that we are wholly owned and totally
-                  independent from manufacturer and other group control gives you
-                  confidence that we will only recommend what is right for you.
+                  Getting involved is easy! Drop us your feedback, connect with us on our Social Media Platforms, or simply use the suggestion form on our website. We welcome your thoughts, feedback, and suggestions with open arms.
                 </p>
 
                 <div class="mt-8">
                   <a href="" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
-                    0151 475 4450
+                    +256704634285
                   </a>
 
                   <a href="" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
@@ -142,11 +140,11 @@
                   </a>
 
                   <a href="" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
-                    tevamutofoundation@gmail.com
+                    wabalanda@gmail.com
                   </a>
 
                   <address class="mt-2 not-italic">
-                    282 Kevin Brook, Imogeneborough, CA 58517
+                  Kayenje, Butambala, Uganda
                   </address>
                 </div>
               </div>
@@ -194,50 +192,6 @@
                         tabindex="-1"
                         name="option"
                       />
-
-                      <label
-                        for="option1"
-                        class="block w-full rounded-lg border border-gray-400 p-3 text-gray-600 hover:border-gray-900 peer-checked:border-gray-900 peer-checked:bg-gray-900 peer-checked:text-white"
-                        tabindex="0"
-                      >
-                        <span class="text-sm"> Option 1 </span>
-                      </label>
-                    </div>
-
-                    <div>
-                      <input
-                        class="peer sr-only"
-                        id="option2"
-                        type="radio"
-                        tabindex="-1"
-                        name="option"
-                      />
-
-                      <label
-                        for="option2"
-                        class="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-gray-900 peer-checked:border-gray-900 peer-checked:bg-gray-900 peer-checked:text-white"
-                        tabindex="0"
-                      >
-                        <span class="text-sm"> Option 2 </span>
-                      </label>
-                    </div>
-
-                    <div>
-                      <input
-                        class="peer sr-only"
-                        id="option3"
-                        type="radio"
-                        tabindex="-1"
-                        name="option"
-                      />
-
-                      <label
-                        for="option3"
-                        class="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-gray-900 peer-checked:border-gray-900 peer-checked:bg-gray-900 peer-checked:text-white"
-                        tabindex="0"
-                      >
-                        <span class="text-sm"> Option 3 </span>
-                      </label>
                     </div>
                   </div>
 
@@ -257,7 +211,7 @@
                       type="submit"
                       class="inline-block w-full rounded-lg bg-indigo-500 hover:bg-indigo-600 px-5 py-3 font-medium text-white sm:w-auto"
                     >
-                      Send your message
+                      Send your suggestion
                     </button>
                   </div>
                 </form>

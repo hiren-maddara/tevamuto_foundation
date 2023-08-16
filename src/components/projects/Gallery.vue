@@ -7,7 +7,7 @@
 <template>
     <!-- gallery -->
     
-    <div class="max-w-screen-xl p-5 mx-auto bg-transparent text-gray-100 dark:bg-gray-800 dark:text-gray-100">
+    <div class="max-w-screen-xl mb-6 p-5 mx-auto bg-transparent text-gray-100 dark:bg-gray-800 dark:text-gray-100">
         <div class="flex flex-col text-left w-full mb-20">
             <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 uppercase">our projects</h2>
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">You can view and read about all our projects</h1>

@@ -2,6 +2,7 @@
   import { computed, ref } from 'vue'
 import { useRouter, useRoute } from 'vue-router';
 import Skeleton from '../components/Skeleton.vue';
+import Mission from '@/components/projects/Mission.vue'
 
 const router = useRouter()
 
@@ -29,8 +30,8 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
         <div class="container px-5 pb-24 pt-6 mx-auto">
             <div class="flex flex-col text-left lg:text-center w-full mb-10">
             <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 uppercase">about us</h2>
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
-            <p class="lg:w-2/3 lg:mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Fueling Positive Change, One Step at a Time</h1>
+            <p class="lg:w-2/3 lg:mx-auto leading-relaxed text-base">Our articles are a testament to our commitment to sharing meaningful insights. Join us in exploring ideas that ignite curiosity and foster growth.</p>
             </div>
 
             <div v-if="isLoadingData" class="flex flex-wrap">
@@ -90,6 +91,8 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
         </div>
     </section>
 
+    <Mission />
+
     <section class="text-gray-700 px-5">
           <div
             class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl"
@@ -111,6 +114,7 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
                 <h3 class="text-2xl font-bold tracki sm:text-3xl dark:text-gray-50">
                   Ad vix debet docendi
                 </h3>
+                
                 <p class="mt-3 text-lg dark:text-gray-400">
                   Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam
                   regione ut, persius eripuit quo id. Sit te euismod tacimates.
