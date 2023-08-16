@@ -2,6 +2,7 @@
   import { computed, ref } from 'vue'
 import { useRouter, useRoute } from 'vue-router';
 import Skeleton from '../components/Skeleton.vue';
+import supabase from '@/data/supabase.js'
 
 const router = useRouter()
 
