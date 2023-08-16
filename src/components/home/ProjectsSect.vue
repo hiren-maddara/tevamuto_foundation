@@ -32,7 +32,7 @@
               <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Explore our projects</h1>
               <div class="h-1 w-20 bg-indigo-500 rounded"></div>
             </div>
-            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Our projects invite you to become a part of their story. Embark on an exploration that promises inspiration and insight.</p>
           </div>
 
           <div v-if="isLoading" class="flex flex-wrap -m-4">
@@ -59,7 +59,7 @@
 
 
           </div>
-          <button @click="router.push('/projects')" class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Go see all projects</button>
+          <button @click="router.push('/projects')" class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Check out all our projects</button>
       
     </section>
 </template>

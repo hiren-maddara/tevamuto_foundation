@@ -3,14 +3,12 @@
         <div class="mx-auto max-w-screen-xl px-6 md:px-16 lg:px-20 py-16 sm:px-6">
           <div class="flex flex-col text-left lg:text-center w-full mb-16">
               <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 uppercase">REACH OUT</h2>
-              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Feel free to reach out to us</h1>
               </div>
           <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div class="lg:col-span-2 lg:py-12">
               <p class="max-w-xl text-lg">
-                At the same time, the fact that we are wholly owned and totally
-                independent from manufacturer and other group control gives you
-                confidence that we will only recommend what is right for you.
+                Your support is the cornerstone of our progress. Reach out today, and let's build something impactful
               </p>
 
               <div class="mt-8">
@@ -27,7 +25,7 @@
                 </a>
 
                 <address class="mt-2 not-italic">
-                  282 Kevin Brook, Imogeneborough, CA 58517
+                Kayenje, Butambala, Uganda
                 </address>
               </div>
             </div>
@@ -75,50 +73,6 @@
                       tabindex="-1"
                       name="option"
                     />
-
-                    <label
-                      for="option1"
-                      class="block w-full rounded-lg border border-gray-400 p-3 text-gray-600 hover:border-gray-900 peer-checked:border-gray-900 peer-checked:bg-gray-900 peer-checked:text-white"
-                      tabindex="0"
-                    >
-                      <span class="text-sm"> Option 1 </span>
-                    </label>
-                  </div>
-
-                  <div>
-                    <input
-                      class="peer sr-only"
-                      id="option2"
-                      type="radio"
-                      tabindex="-1"
-                      name="option"
-                    />
-
-                    <label
-                      for="option2"
-                      class="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-gray-900 peer-checked:border-gray-900 peer-checked:bg-gray-900 peer-checked:text-white"
-                      tabindex="0"
-                    >
-                      <span class="text-sm"> Option 2 </span>
-                    </label>
-                  </div>
-
-                  <div>
-                    <input
-                      class="peer sr-only"
-                      id="option3"
-                      type="radio"
-                      tabindex="-1"
-                      name="option"
-                    />
-
-                    <label
-                      for="option3"
-                      class="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-gray-900 peer-checked:border-gray-900 peer-checked:bg-gray-900 peer-checked:text-white"
-                      tabindex="0"
-                    >
-                      <span class="text-sm"> Option 3 </span>
-                    </label>
                   </div>
                 </div>
 

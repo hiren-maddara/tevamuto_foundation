@@ -29,6 +29,11 @@ const router = createRouter({
       name: "contacts",
       component: () => import("../views/Contacts.vue"),
     },
+    {
+      path: "/adminpublic",
+      name: "adminpublic",
+      component: () => import("../views/AdminPublic.vue"),
+    },
   ],
 });
 

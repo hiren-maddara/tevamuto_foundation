@@ -14,7 +14,7 @@ const loadData = async () => {
     <section class="px-10 py-4">
       <div class="flex flex-col text-left lg:text-center w-full mb-10">
               <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 uppercase">what people say</h2>
-              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">This is what people say about us</h1>
               </div>
         <div class="mx-auto max-w-screen-xl">
 
