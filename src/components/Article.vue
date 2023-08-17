@@ -25,7 +25,7 @@ const getArticleData = async (section, id) => {
 }
 
 const articleData = ref(await getArticleData(sect.value, articleId.value))
-console.log(articleData.value.content)
+// console.log(articleData.value.content)
 
 //then get other articles
 const loadArticles = async (sect) => {
