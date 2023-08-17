@@ -85,7 +85,7 @@ const recentArticles = computed(() => articles.value.slice(5)) //select the most
                                 <time :datetime="(new Date()).toUTCString()">{{ (new Date()).toUTCString() }}</time>
                             </p>
     
-                            <img :src="`/src/assets/img/${articleData.img}`" class="block w-[80%] mx-auto aspect-square max-h-60" alt="">
+                            <img :src="`${articleData.img}`" class="block w-[80%] mx-auto aspect-square max-h-60" alt="">
                         </div>
     
                         <div class="container mx-auto px-4 dark:text-gray-100">
