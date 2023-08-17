@@ -30,13 +30,12 @@
                     </p>
                 </div>
                 <div class="flex items-center sm:justify-center">
-                    <button type="submit"
+                    <button @click="$router.push('/contacts')"
                         class="text-gray-700 inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
                         Get started
                     </button>
-                    <a href="/" aria-label=""
-                        class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700">Learn
-                        more</a>
+                    <a href="/about" aria-label=""
+                        class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700">Learn more</a>
                 </div>
             </div>
         </div>
