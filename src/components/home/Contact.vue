@@ -31,14 +31,15 @@
             </div>
 
             <div class="rounded-lg bg-gray-200 p-8 shadow-lg lg:col-span-3 lg:p-12">
-              <form action="" class="space-y-4">
+              <form action="https://formspree.io/f/xbjvoojg" class="space-y-4" method="POST">
                 <div>
                   <label class="sr-only" for="name">Name</label>
                   <input
                     class="w-full rounded-lg border-gray-400 p-3 text-sm"
                     placeholder="Name"
                     type="text"
-                    id="name"
+                    id="name" 
+                    name= "Name" required
                   />
                 </div>
 
@@ -50,6 +51,7 @@
                       placeholder="Email address"
                       type="email"
                       id="email"
+                      name="Email" required
                     />
                   </div>
 
@@ -60,20 +62,13 @@
                       placeholder="Phone Number"
                       type="tel"
                       id="phone"
+                      name="Phone" required
                     />
                   </div>
                 </div>
 
                 <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
-                  <div>
-                    <input
-                      class="peer sr-only"
-                      id="option1"
-                      type="radio"
-                      tabindex="-1"
-                      name="option"
-                    />
-                  </div>
+         
                 </div>
 
                 <div>
@@ -84,6 +79,7 @@
                     placeholder="Message"
                     rows="8"
                     id="message"
+                    name="Message" required
                   ></textarea>
                 </div>
 
