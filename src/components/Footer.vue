@@ -72,7 +72,7 @@ const scrollToTop = () => window.scrollTo({
                 <a class="text-gray-600 hover:text-gray-800">+256704634285</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">wabalanda@gmail.com</a>
+                <a class="text-gray-600 hover:text-gray-800">tevamutofoundationug@gmail.com</a>
               </li>
               <li>
                 <a class="text-gray-600 hover:text-gray-800">IG: @tvmfoundation</a>

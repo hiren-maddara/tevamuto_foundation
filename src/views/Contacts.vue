@@ -140,7 +140,7 @@
                   </a>
 
                   <a href="" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
-                    wabalanda@gmail.com
+                    tevamutofoundationug@gmail.com
                   </a>
 
                   <address class="mt-2 not-italic">
