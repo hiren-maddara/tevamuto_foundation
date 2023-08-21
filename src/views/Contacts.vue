@@ -11,8 +11,8 @@
               <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="@/assets/img/user.jpg">
               <div class="w-full">
                 <h2 class="title-font font-medium text-lg text-gray-900">Wabalanda Wilson </h2>
-                <h3 class="text-gray-500 mb-3">Founder </h3>
-                <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <h3 class="text-gray-500 mb-3">Founder - C.E.O </h3>
+                <p class="mb-4">Empowering our community, one initiative at a time</p>
                 <span class="inline-flex">
                   <a class="text-gray-500">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -35,11 +35,11 @@
           </div>
           <div class="p-4 lg:w-1/4 md:w-1/2">
             <div class="h-full flex flex-col items-center text-center">
-              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="@/assets/img/user.jpg">
+              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="@/assets/img/henry.jpg">
               <div class="w-full">
-                <h2 class="title-font font-medium text-lg text-gray-900">Balidawa Noel</h2>
-                <h3 class="text-gray-500 mb-3"></h3>
-                <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <h2 class="title-font font-medium text-lg text-gray-900">Bageya Henry</h2>
+                <h3 class="text-gray-500 mb-3">Community Advocate</h3>
+                <p class="mb-4">Passion for community, power for change</p>
                 <span class="inline-flex">
                   <a class="text-gray-500">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -62,11 +62,11 @@
           </div>
           <div class="p-4 lg:w-1/4 md:w-1/2">
             <div class="h-full flex flex-col items-center text-center">
-              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="@/assets/img/user.jpg">
+              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="@/assets/img/manjeri.jpg">
               <div class="w-full">
                 <h2 class="title-font font-medium text-lg text-gray-900">Musenero Manjeri</h2>
-                <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <h3 class="text-gray-500 mb-3">Childcare Advocate</h3>
+                <p class="mb-4">Nurturing today's children shapes tomorrow's world</p>
                 <span class="inline-flex">
                   <a class="text-gray-500">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -89,11 +89,11 @@
           </div>
           <div class="p-4 lg:w-1/4 md:w-1/2">
             <div class="h-full flex flex-col items-center text-center">
-              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="@/assets/img/user.jpg">
+              <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="@/assets/img/doreen.jpg">
               <div class="w-full">
                 <h2 class="title-font font-medium text-lg text-gray-900">Tibiwa Doreen</h2>
-                <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <h3 class="text-gray-500 mb-3">Health Enthusiast</h3>
+                <p class="mb-4">Empowering lives through wellness and compassion</p>
                 <span class="inline-flex">
                   <a class="text-gray-500">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
