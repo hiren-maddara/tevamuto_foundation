@@ -1,110 +1,122 @@
 [
     {
         "article_id": "about1",
-        "category": "community",
+        "category": "Community",
         "tags": ["health", "students", "youth", "cooperative"],
-        "title": "Interdum et malesuada fames ac ante ipsum primis in faucibus?",
-        "summary": "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        "title": "Water and Sanitaion",
+        "summary": "The project aims to address the critical issue of inadequate sanitation facilities in a school setting by constructing modern and hygienic toilets for pupils. The lack of proper sanitation infrastructure negatively impacts pupils' health, well-being, and overall educational experience. By providing access to clean and functional toilets, the project strives to create a conducive learning environment and promote better hygiene practices among pupils.",
         "content": [
             {
-                "heading":"Working with us is a pleasure",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Objectives:",
+                "paragraph": "- Construction of modern, safe, and accessible toilets that adhere to sanitation standards and guidelines.
+- Enhancing the overall hygiene and health conditions of pupils by providing clean and private facilities."
             },
             {
-                "heading":"This is a second heading",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Key Activities:",
+                "paragraph": "Site Assessment: Evaluate the current sanitation facilities and identify areas that require improvement or new construction.
+- Design and Planning: Develop detailed architectural and engineering plans for the construction of the new toilets."
             },
             {
-                "heading":"Adn the a third one",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Expected Outcomes:",
+                "paragraph": "Improved Health and Hygiene: Pupils will have access to clean and safe toilets, reducing the risk of waterborne diseases and promoting better hygiene habits."
             }
         ],
-        "creator": "Leroy Mo Salah",
+        "creator": "Bageya Henry",
         "img": "img-1.jpg",
         "note": {
-            "heading": "Top Notch Services",
-            "content": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens."
+            "heading": "Construction of a 5 stance Pit Latrine",
+            "content": "By prioritizing the construction of modern and functional toilets, this project aims to make a tangible impact on the well-being, education, and overall development of school pupils, while also fostering a culture of hygiene within the school community."
         }
     },
     {
         "article_id": "about2",
-        "category": "education",
+        "category": "Education",
         "tags": ["sanitation", "students", "youth", "learning", "technology"],
-        "title": "Interdum et malesuada fames ac ante ipsum primis in faucibus?",
-        "summary": "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        "title": "Construction of Classrooms for Pupils at Kayenje Primary School",
+        "summary": "This project seeks to address the pressing need for adequate classroom space by constructing new, well-equipped classrooms for pupils in an educational institution. The lack of sufficient classroom facilities can lead to overcrowding, compromised learning environments, and hindered educational outcomes. By building new classrooms, the project aims to provide a conducive space for effective teaching and learning, ultimately enhancing the quality of education and fostering academic success.",
         "content": [
             {
-                "heading":"Working with us is a pleasure",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Objectives:",
+                "paragraph": "1. Construction of spacious and modern classrooms that can accommodate the current and future pupil population.
+                2. Improvement of the learning environment by creating comfortable and conducive spaces for teaching and studying."
             },
             {
-                "heading":"This is a second heading",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Key Activities:",
+                "paragraph": "- Needs Assessment: Evaluate the current classroom capacity and identify the number of additional classrooms needed.
+                              - Design and Planning: Develop detailed architectural plans that prioritize functional and ergonomic classroom layouts."
             },
             {
-                "heading":"Adn the a third one",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Expected Outcomes:",
+                "paragraph": "Increased Learning Space: The project will create sufficient room for all pupils, improving their comfort and concentration.
+                        - Enhanced Teaching Environment: Teachers will have the necessary tools and space to employ effective teaching strategies."
             }
         ],
-        "creator": "Leroy Mo Salah",
+        "creator": "Wilson Wabalanda",
         "img": "img-1.jpg",
         "note": {
-            "heading": "Top Notch Services",
-            "content": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens."
+            "heading": "Top Notch Resources",
+            "content": "By constructing new classrooms that cater to the educational needs of pupils, this project aims to not only alleviate the challenges posed by inadequate infrastructure but also create an environment where both teachers and pupils can thrive and reach their full potential"
         }
     },
     {
         "article_id": "about3",
-        "category": "Environment",
+        "category": "Water Project",
         "tags": ["community", "students", "youth", "nature", "engagemnet"],
-        "title": "Interdum et malesuada fames ac ante ipsum primis in faucibus?",
-        "summary": "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        "title": "Drilling of a Borehole for people in a community",
+        "summary": "Community Water Access Initiative: Borehole Drilling for Residents and Pupils.",
         "content": [
             {
-                "heading":"Working with us is a pleasure",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Summary:",
+                "paragraph": "This project aims to provide clean and reliable access to safe drinking water for both a community and school pupils by drilling a borehole. The lack of access to clean water can lead to numerous health issues and hinder the development of both residents and students. By constructing a borehole, the project seeks to ensure a sustainable source of clean water, improve health outcomes, and enhance the overall well-being of the community and pupils"
             },
             {
-                "heading":"This is a second heading",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Objectives:",
+                "paragraph": "Drilling and establishment of a functional borehole to provide residents and school pupils with a consistent and safe source of clean water.
+- Reduction of waterborne diseases and health risks associated with inadequate access to clean water."
             },
             {
-                "heading":"Adn the a third one",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Expected Outcomes:",
+                "paragraph": "mproved Health: Access to clean water will reduce waterborne diseases and improve overall health for both residents and pupils."
             }
         ],
-        "creator": "Leroy Mo Salah",
+        "creator": "Tibiwa Doreen",
         "img": "img-1.jpg",
         "note": {
-            "heading": "Top Notch Services",
-            "content": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens."
+            "heading": "Sustainable Solution",
+            "content": "Community involvement and proper management practices will ensure the long-term functionality of the borehole."
         }
     },
     {
         "article_id": "about11",
         "category": "Environment",
         "tags": ["health", "students", "youth", "cooperative"],
-        "title": "Interdum et malesuada fames ac ante ipsum primis in faucibus?",
-        "summary": "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        "title": "Planting of Trees In the Community",
+        "summary": "The project aims to transform a community by planting trees strategically to promote environmental sustainability, improve air quality, enhance aesthetics, and create a healthier living environment. By actively engaging community members in tree planting activities, the project seeks to foster a sense of environmental responsibility and unity while reaping the numerous ecological and social benefits that trees bring.",
         "content": [
             {
-                "heading":"Working with us is a pleasure",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Objective:",
+                "paragraph": "Plant a diverse range of trees in targeted areas of the community to improve overall environmental conditions."
             },
             {
-                "heading":"This is a second heading",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Key Activities:",
+                "paragraph": "Tree Selection and Planning: Identify suitable tree species based on local climate, soil conditions, and ecological benefits.
+Site Preparation: Prepare planting sites, including soil enrichment, proper spacing, and protection measures."
             },
             {
-                "heading":"Adn the a third one",
-                "paragraph": "Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript."
+                "heading":"Expected Outcomes:",
+                "paragraph": "Improved Air Quality: Increased tree canopy will help filter pollutants and enhance air quality in the community."
             }
         ],
-        "creator": "Leroy Mo Salah",
+        "creator": "Noel Balidawa",
         "img": "img-1.jpg",
         "note": {
-            "heading": "Top Notch Services",
-            "content": "The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens."
+            "heading": "Budget and Resources",
+            "content": "By planting trees and involving the community in the process, this project aims to create a greener and more sustainable community that values its natural environment. It seeks to leave a lasting positive impact on the local ecosystem and the well-being of its residents.
+
+
+
+
+"
         }
     },
     {
