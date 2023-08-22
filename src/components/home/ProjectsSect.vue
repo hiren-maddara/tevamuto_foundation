@@ -17,7 +17,7 @@
     projectsData.value = data
     isLoading.value = false
   }
-  // await loadData()
+  await loadData()
 
   // const renderProjects = computed(() => projectsData.value.slice(5))
 
