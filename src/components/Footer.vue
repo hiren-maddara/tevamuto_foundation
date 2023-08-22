@@ -30,7 +30,7 @@ const scrollToTop = () => window.scrollTo({
       </a>
       </div>
 
-      <div class="container lg:flex md:flex px-1 lg:px-5 py-12 pb-4 mx-auto">
+      <div class="container lg:flex md:flex px-1 lg:px-5 py-12 pb-4 mx-auto break-words">
 
         <div class="lg:w-1/4 flex-1 mb-4 mx-auto py-4 text-center sm:order-first md:w-1/2 w-full px-4">
           <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
@@ -75,10 +75,10 @@ const scrollToTop = () => window.scrollTo({
                 <a class="text-gray-600 hover:text-gray-800">tevamutofoundationug@gmail.com</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">IG: @tvmfoundation</a>
+                <a class="text-gray-600 hover:text-gray-800">@tvmfoundation</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Twitter: @tvmfoundation</a>
+                <a class="text-gray-600 hover:text-gray-800">@tvmfoundation</a>
               </li>
             </nav>
           </div>

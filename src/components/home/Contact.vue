@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
     <section class="bg-transparent text-gray-800 mb-18 py-10">
         <div class="mx-auto max-w-screen-xl px-6 md:px-16 lg:px-20 py-16 sm:px-6">
@@ -5,7 +9,7 @@
               <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 uppercase">REACH OUT</h2>
               <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Feel free to reach out to us</h1>
               </div>
-          <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+          <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5 break-words">
             <div class="lg:col-span-2 lg:py-12">
               <p class="max-w-xl text-lg">
                 Your support is the cornerstone of our progress. Reach out today, and let's build something impactful

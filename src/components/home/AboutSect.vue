@@ -48,7 +48,7 @@ const renderAboutData = computed(() => {
       <div v-if="isLoadingData" class="flex flex-wrap">
         <div
           v-for="n in 4"
-          class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+          class="w-full xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
         >
           <Skeleton prefer="card" h="auto" w="auto" />
         </div>

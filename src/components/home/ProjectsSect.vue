@@ -4,6 +4,9 @@
   import Skeleton from '../Skeleton.vue'
   import supabase from "@/data/supabase.js"
 
+  // import projects from "@/data/projects.json"
+  // await supabase.from('projects').insert(projects)
+
   const router = useRouter()
 
   const projectsData = ref([])
@@ -11,17 +14,14 @@
 
   async function loadData(){
     const {data, error} = await supabase.from('projects').select().order('created_at', { ascending: false })
-    if(error) alert(error)
+    if(error) alert(error.message)
+    console.log(data)
     projectsData.value = data
     isLoading.value = false
   }
   await loadData()
 
   const renderProjects = computed(() => projectsData.value.slice(5))
-
-  // watch(projectsData, () => console.log([...projectsData.value]))
-  // watch(renderProjects, () => console.log(renderProjects.value))
-  
 
 </script>
 
@@ -42,7 +42,7 @@
           </div>
           <div v-else class="flex flex-wrap -m-4">
 
-            <div v-for="project in renderProjects" :key="project.article_id" class="xl:w-1/4 md:w-1/2 p-4">
+            <div v-for="project in projectsData" :key="project.article_id" class="xl:w-1/4 md:w-1/2 p-4">
               <div class="bg-gray-100 p-6 rounded-lg">
                 <img class="h-56 rounded w-full object-cover object-center mb-6" src="https://fqlchsjtnuyloculwgdg.supabase.co/storage/v1/object/sign/projects/img-1.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9pbWctMS5qcGciLCJpYXQiOjE2OTIxODg1NTYsImV4cCI6MjAwNzU0ODU1Nn0.S4WlKAK6u_cIu5xO6pnzWgyZzvewzQmpUphwDiqZID0" alt="content">
                 <!-- <img class="h-56 rounded w-full object-cover object-center mb-6" :src="`/src/assets/img/${project.img}`" alt="content"> -->
