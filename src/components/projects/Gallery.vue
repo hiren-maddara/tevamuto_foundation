@@ -15,11 +15,11 @@
 
     const months = ['Jan', "Feb", "Mar", 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     const getCategoryBg = cat => {
-        if(cat == 'health') return 'bg-red-600'
-        if(cat == 'art') return 'bg-violet-600'
-        if(cat == 'politics') return 'bg-violet-400'
-        if(cat == 'sports') return 'bg-indigo-500'
-        if(cat == 'science' || cat == 'environment') return 'bg-teal-600'
+        if(cat.toLowerCase() == 'health') return 'bg-red-600'
+        if(cat.toLowerCase() == 'art') return 'bg-violet-600'
+        if(cat.toLowerCase() == 'education') return 'bg-violet-400'
+        if(cat.toLowerCase() == 'science') return 'bg-indigo-500'
+        if(cat.toLowerCase() == 'environment') return 'bg-teal-600'
         return 'bg-gray-800'
     }
 
