@@ -4,8 +4,6 @@
   import Skeleton from '../Skeleton.vue'
   import supabase from "@/data/supabase.js"
 
-  // import projects from "@/data/projects.json"
-  // await supabase.from('projects').insert(projects)
 
   const router = useRouter()
 
@@ -19,9 +17,9 @@
     projectsData.value = data
     isLoading.value = false
   }
-  await loadData()
+  // await loadData()
 
-  const renderProjects = computed(() => projectsData.value.slice(5))
+  // const renderProjects = computed(() => projectsData.value.slice(5))
 
 </script>
 
