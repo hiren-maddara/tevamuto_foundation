@@ -1,5 +1,5 @@
 <script setup>
-  import {ref, watch, computed} from 'vue'
+  import {ref} from 'vue'
   import { useRouter } from 'vue-router'
   import Skeleton from '../Skeleton.vue'
   import supabase from "@/data/supabase.js"
@@ -7,15 +7,20 @@
 
   const router = useRouter()
 
-  const projectsData = ref([])
+  const projectsData = ref(null)
   const isLoading = ref(true)
 
   async function loadData(){
     const {data, error} = await supabase.from('projects').select().order('created_at', { ascending: false })
-    if(error) alert(error.message)
-    console.log(data)
-    projectsData.value = data
-    isLoading.value = false
+    if(data){
+      isLoading.value = false
+      projectsData.value = data
+    }
+    
+    if(error) {
+      alert(`Projects Section: ${error.message}`)
+      isLoading.value = false
+    }
   }
   await loadData()
 
@@ -33,16 +38,23 @@
             <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Our projects invite you to become a part of their story. Embark on an exploration that promises inspiration and insight.</p>
           </div>
 
-          <div v-if="isLoading" class="flex flex-wrap -m-4">
-            <div v-for="n in 4" class="xl:w-1/4 md:w-1/2 p-4">
-              <Skeleton prefer="card" />
+          <div v-if="isLoading" class="flex flex-wrap">
+            <div
+              v-for="n in 4"
+              class="w-full xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+            >
+              <Skeleton prefer="card" h="auto" w="auto" />
             </div>
           </div>
-          <div v-else class="flex flex-wrap -m-4">
 
+          <div v-else-if="!projectsData" class="grid px-4  place-content-center">
+            <h1 class="tracking-widest text-gray-500 uppercase">404 | Cannot fetch: Make sure you are online</h1>
+          </div>
+
+          <div v-else-if="projectsData" class="flex flex-wrap -m-4">
             <div v-for="project in projectsData" :key="project.article_id" class="xl:w-1/4 md:w-1/2 p-4">
               <div class="bg-gray-100 p-6 rounded-lg">
-                <img class="h-56 rounded w-full object-cover object-center mb-6" src="https://fqlchsjtnuyloculwgdg.supabase.co/storage/v1/object/sign/projects/img-1.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9qZWN0cy9pbWctMS5qcGciLCJpYXQiOjE2OTIxODg1NTYsImV4cCI6MjAwNzU0ODU1Nn0.S4WlKAK6u_cIu5xO6pnzWgyZzvewzQmpUphwDiqZID0" alt="content">
+                <img class="h-56 rounded w-full object-cover object-center mb-6" :src="project.img" :alt="project.title">
                 <!-- <img class="h-56 rounded w-full object-cover object-center mb-6" :src="`/src/assets/img/${project.img}`" alt="content"> -->
                 <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font uppercase">{{ project.category }}</h3>
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{project.main_tag}}</h2>

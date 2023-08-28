@@ -69,10 +69,10 @@ const scrollToTop = () => window.scrollTo({
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONTACTS</h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800">+256704634285</a>
+                <a href="tel:+256704634285" class="text-gray-600 hover:text-gray-800">+256704634285</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">tevamutofoundationug@gmail.com</a>
+                <a href="mailto:tevamutofoundationug@gmail.com" class="text-gray-600 hover:text-gray-800">tevamutofoundationug@gmail.com</a>
               </li>
               <li>
                 <a class="text-gray-600 hover:text-gray-800">@tvmfoundation</a>
@@ -87,17 +87,16 @@ const scrollToTop = () => window.scrollTo({
             <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">TECHNICAL</h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Report Issue</a>
+                <a class="text-gray-600 hover:text-gray-800" href="mailto:hiren.maddara@gmail.com">Report Issue</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Help</a>
+                <a class="text-gray-600 hover:text-gray-800" href="mailto:hiren.maddara@gmail.com">Help</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Contact Developer</a>
+                <a class="text-gray-600 hover:text-gray-800" href="tel:+256708979963">Contact Developer</a>
               </li>
             </nav>
           </div>
-
 
         </div>
     
@@ -115,7 +114,7 @@ const scrollToTop = () => window.scrollTo({
             <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@tevamuto</a>
           </p>
           <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">Product of
-            <a href="https://twitter.com/hiren" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">Hiren Maddara</a>
+            <a href="https:instagram.com/hrn_mddr" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">Hiren Maddara</a>
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a class="text-gray-500">

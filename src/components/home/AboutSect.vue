@@ -6,24 +6,26 @@ import supabase from '@/data/supabase'
 
 const router = useRouter();
 
-const aboutData = ref([]);
+const aboutData = ref(null);
 const isLoadingData = ref(true);
 
 const loadAboutData = async () => {
   // aboutData.value = (await import("@/data/about.json")).default;
   const {data, error} = await supabase.from('about').select().order('created_at', { ascending: false })
-  if(error) alert(error)
-  aboutData.value = data
-  isLoadingData.value = false;
+  if(data){
+    isLoadingData.value = false
+    aboutData.value = data
+  }
+  if(error){
+    if(error) alert(`About section: ${error.message}`)
+    isLoadingData.value = false;
+  }
 };
 
 const formatWord = (w) => w.replace(w[0], w[0].toUpperCase());
 
 loadAboutData();
 
-const renderAboutData = computed(() => {
-  return aboutData.value.slice(0, 4);
-});
 </script>
 
 <template>
@@ -54,9 +56,13 @@ const renderAboutData = computed(() => {
         </div>
       </div>
 
+      <div v-else-if="!aboutData" class="grid px-4  place-content-center">
+        <h1 class="tracking-widest text-gray-500 uppercase">404 | Cannot fetch: Are you online?</h1>
+      </div>
+
       <div v-else class="flex flex-wrap">
         <div
-          v-for="item in renderAboutData"
+          v-for="item in aboutData"
           :key="item.article_id"
           class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
         >
@@ -67,7 +73,7 @@ const renderAboutData = computed(() => {
           </h2>
           <p class="leading-relaxed text-base mb-4">{{ item.summary }}</p>
           <a
-            @click="router.push(`about/article/${item.article_id}`)"
+            @click="router.push(`/about/article/${item.article_id}`)"
             class="text-indigo-500 inline-flex items-center transition-all hover:gap-2"
             >Learn More
             <svg

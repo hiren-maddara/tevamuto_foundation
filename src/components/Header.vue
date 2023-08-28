@@ -57,8 +57,8 @@ import {ref} from 'vue'
 			</li>
 			<li><a class="text-sm text-gray-400 hover:text-gray-500" :class="activeStatus('/contacts') && 'text-indigo-500 font-bold'" @click="navTo('/contacts')">Contacts</a></li>
 		</ul>
-		<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">Sign In</a>
-		<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>
+		<!-- <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">Sign In</a>
+		<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a> -->
 	</nav>
 
 	<div class="navbar-menu sidenav relative z-[150]" :class="openSideBar || 'hidden'">

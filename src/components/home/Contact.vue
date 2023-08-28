@@ -16,15 +16,15 @@
               </p>
 
               <div class="mt-8">
-                <a href="" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
+                <a href="tel:+256704634285" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
                   +256704634285
                 </a>
 
-                <a href="" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
+                <a href="mailto:tevamutofoundationug@gmail.com" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
                   @tevamuttofoundation
                 </a>
 
-                <a href="" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
+                <a href="mailto:tevamutofoundationug@gmail.com" class="text-2xl font-bold text-indigo-500 hover:text-indigo-600">
                   tevamutofoundationug@gmail.com
                 </a>
 

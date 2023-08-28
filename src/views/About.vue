@@ -1,47 +1,52 @@
 <script setup>
-  import { computed, ref, watch} from 'vue'
-import { useRouter, useRoute } from 'vue-router';
+  import { ref, watch} from 'vue'
+import { useRouter} from 'vue-router';
 import Skeleton from '../components/Skeleton.vue';
 import supabase from '@/data/supabase.js'
 import Mission from "@/components/projects/Mission.vue"
 const router = useRouter()
 
-const aboutData = ref([])
+const aboutData = ref(null)
 const isLoading = ref(true)
+const loadingError = ref(null)
 
 async function loadData() {
   const { data, error } = await supabase.from('about').select().order('created_at', { ascending: false })
-  if (error) alert(error)
-  aboutData.value = data
-  isLoading.value = false
+  if (error) {
+    isLoading.value = false
+    loadingError.value = true
+  }
+
+  if(data){
+    isLoading.value = false
+    aboutData.value = data
+  }
 }
 await loadData()
 
-// const renderabout = computed(() => aboutData.value.slice(5))
-// watch(aboutData, () => console.log([...aboutData.value]))
-// watch(renderabout, () => console.log(renderabout.value))
-
-
 const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-watch(aboutData, console.log(aboutData.value))
+// watch(aboutData, console.log(aboutData.value))
 </script>
 
 <template>
     <section class="text-gray-600 body-font">
         <div class="container px-5 pb-24 pt-6 mx-auto">
             <div class="flex flex-col text-left lg:text-center w-full mb-10">
-            <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 uppercase">about us</h2>
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Fueling Positive Change, One Step at a Time</h1>
-            <p class="lg:w-2/3 lg:mx-auto leading-relaxed text-base">Our articles are a testament to our commitment to sharing meaningful insights. Join us in exploring ideas that ignite curiosity and foster growth.</p>
+              <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1 uppercase">about us</h2>
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Fueling Positive Change, One Step at a Time</h1>
+              <p class="lg:w-2/3 lg:mx-auto leading-relaxed text-base">Our articles are a testament to our commitment to sharing meaningful insights. Join us in exploring ideas that ignite curiosity and foster growth.</p>
             </div>
 
-            <div v-if="isLoadingData" class="flex flex-wrap">
-              <Skeleton v-for="n in 8" :key="n" class="xl:w-1/4 lg:w-1/2 md:w-full" prefer="card" />
+            <div v-if="isLoading" class="flex flex-wrap">
+              <Skeleton v-for="n in 4" :key="n" class="xl:w-1/4 lg:w-1/2 md:w-full" prefer="card" />
+            </div>
+
+            <div v-else-if="loadingError" class="grid h-full px-4 bg-white place-content-center">
+              <h1 class="tracking-widest text-gray-500 uppercase">404 | Failed to fetch: Make sure you are connected to the internet</h1>
             </div>
 
             <div v-else class="flex flex-wrap">
-
                 <div v-for="article in aboutData" :key="article.article_id" class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                     <article class="flex bg-white transition hover:shadow-xl">
                         <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
@@ -345,7 +350,6 @@ watch(aboutData, console.log(aboutData.value))
               </div>
             </div>
           </div>
-      </section>
-
+    </section>
 
 </template>
