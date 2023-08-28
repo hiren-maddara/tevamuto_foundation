@@ -113,18 +113,17 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
               <p
                 class="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400"
               >
-                Quando cetero his ne, eum admodum sapientem ut.
+              From humble beginnings to global impact, this is the inspiring journey of a foundation dedicated to shaping a brighter future for all
               </p>
             </div>
             <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
               <div>
                 <h3 class="text-2xl font-bold tracki sm:text-3xl dark:text-gray-50">
-                  Ad vix debet docendi
+                 Founder
                 </h3>
                 
                 <p class="mt-3 text-lg dark:text-gray-400">
-                  Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam
-                  regione ut, persius eripuit quo id. Sit te euismod tacimates.
+                  The Foundation was started  by Wabalanda Wilson, the Headteacher of Kayenje Primary School. It started with the major aim of solving the problems faced by people in the community through acquiring help from the pioneers of change globally.
                 </p>
                 <div class="mt-12 space-y-12">
                   <div class="flex">
@@ -150,12 +149,11 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
                     </div>
                     <div class="ml-4">
                       <h4 class="text-lg font-medium leadi dark:text-gray-50">
-                        Per ei quaeque sensibus
+                      
+                        Inception and Vision
                       </h4>
                       <p class="mt-2 dark:text-gray-400">
-                        Ex usu illum iudico molestie. Pro ne agam facete
-                        mediocritatem, ridens labore facete mea ei. Pro id apeirian
-                        dignissim.
+                        The Foundation was born with vibrant passion emerging from a group of visionary minds determined to bring about positive change. Fuelled by a shared vision of a better world, the foundation's founder laid the cornerstone with a focus on education, community development, and social well-being.
                       </p>
                     </div>
                   </div>
@@ -182,11 +180,11 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
                     </div>
                     <div class="ml-4">
                       <h4 class="text-lg font-medium leadi dark:text-gray-50">
-                        Cu imperdiet posidonium sed
+                        
+                       Expanding Horizons
                       </h4>
                       <p class="mt-2 dark:text-gray-400">
-                        Amet utinam aliquando ut mea, malis admodum ocurreret nec et,
-                        elit tibique cu nec. Nec ex maluisset inciderint, ex quis.
+                        The organization expects to broaden its scope to encompass wider societal issues. Scholarships, health clinics, and skill workshops continued to flourish, while new initiatives for environmental conservation and disaster relief were added to the foundation's palette.
                       </p>
                     </div>
                   </div>
@@ -213,12 +211,10 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
                     </div>
                     <div class="ml-4">
                       <h4 class="text-lg font-medium leadi dark:text-gray-50">
-                        Nulla omittam sadipscing mel ne
+                        Enduring Legacy (Present)
                       </h4>
                       <p class="mt-2 dark:text-gray-400">
-                        At sed possim oporteat probatus, justo graece ne nec, minim
-                        commodo legimus ut vix. Ut eos iudico quando soleat, nam
-                        modus.
+                        Today, the Foundation Heading stands as a testament to the power of determination. Its journey, from modest beginnings to global influence, underscores the significance of compassion, collaboration, and community-led endeavors
                       </p>
                     </div>
                   </div>
@@ -236,12 +232,10 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
               <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                 <div class="lg:col-start-2">
                   <h3 class="text-2xl font-bold tracki sm:text-3xl dark:text-gray-50">
-                    Eam nibh gloriatur ex
+                    Achievements
                   </h3>
                   <p class="mt-3 text-lg dark:text-gray-400">
-                    Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te
-                    latine theophrastus. Ea his tale nibh dissentias, mei exerci
-                    tamquam euripidis cu.
+                    The Tevamuto Foundation has worked hand in hand with different organisations aound the world and volunteers to build the community under various sectors.
                   </p>
                   <div class="mt-12 space-y-12">
                     <div class="flex">
@@ -254,7 +248,7 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
-                            class="w-7 h-7"
+                            class="w-7 h-7">
                           >
                             <path
                               stroke-linecap="round"
@@ -267,12 +261,10 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
                       </div>
                       <div class="ml-4">
                         <h4 class="text-lg font-medium leadi dark:text-gray-50">
-                          Cibo augue offendit has ad
+                          Patnerships
                         </h4>
                         <p class="mt-2 dark:text-gray-400">
-                          An per velit appellantur, ut utinam minimum nominavi sit,
-                          odio nostro habemus ne nec. Ne sonet regione contentiones
-                          est.
+                         We have worked with a number of Individuals and organisations to work on several projects aimed at benefiting and impacting the lives of the people in the community.
                         </p>
                       </div>
                     </div>
@@ -299,12 +291,11 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
                       </div>
                       <div class="ml-4">
                         <h4 class="text-lg font-medium leadi dark:text-gray-50">
-                          At eum ferri luptatum lobortis
+                          Projects
                         </h4>
                         <p class="mt-2 dark:text-gray-400">
-                          Te per quidam maiorum ocurreret, etiam delicatissimi usu ad.
-                          Ne has quod periculis. Te sit primis iisque efficiantur.
-                        </p>
+                          
+                          Currently, the foundation has registered a number of projects that it has worked on as described in the various sections of the wesbite.The projects are categories such as Health, Water and Sanitation, Environment, Science among others.                        </p>
                       </div>
                     </div>
                     <div class="flex">
@@ -330,11 +321,10 @@ const months = ['Jan', "Feb", 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
                       </div>
                       <div class="ml-4">
                         <h4 class="text-lg font-medium leadi dark:text-gray-50">
-                          Dicunt verterem evertitur eu sea
+                          Members
                         </h4>
                         <p class="mt-2 dark:text-gray-400">
-                          Audire principes rationibus eam an, autem nominavi luptatum
-                          per te. Sumo fabulas vim eu, sonet saperet eleifend ut vix.
+                          The foundation consists of a group of its members who are dedicated to ensure that everything is accomplished.
                         </p>
                       </div>
                     </div>
