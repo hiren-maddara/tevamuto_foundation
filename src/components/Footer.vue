@@ -110,7 +110,7 @@ const scrollToTop = () => window.scrollTo({
             </svg>
             <span class="ml-3 text-xl uppercase">tevamutto foundation</span>
           </a>
-          <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© {{ (new Date()).getFullYear() }} Tevamuto —
+          <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2015 - {{ (new Date()).getFullYear() }} Tevamuto —
             <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@tevamuto</a>
           </p>
           <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">Product of
