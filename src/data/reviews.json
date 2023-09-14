@@ -1,50 +1,51 @@
 [
     {
         "id": "r1",
-        "name": "Gladys Leon",
-        "info": "Head of SEO, Google Inc",
+        "name": "Kalenzi Mubarak",
+        "info": "Headteacher, Zalambi Education Center",
         "img_url": "",
-        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
-
+        "review": "I am thoroughly impressed with the Tevamuto Foundation's commitment to our community! As an educator, I value the resources and information the foundation provides, which play a vital role in enriching our local education. It's a valuable tool for both teachers and students, making a positive impact on our community. Keep up the great work!"
     },
     {
         "id": "r2",
-        "name": "Olagys Leopan",
-        "info": "Manager, Centenary",
+        "name": "Zalambi Joseph",
+        "info": "Director, Magooli Education Center",
         "img_url": "",
-        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
-
+        "review": "The Tevamuto Foundation has been an invaluable resource for our educational institution and the broader community. The user-friendly design and the wealth of content make it a go-to destination for educational materials, benefiting our local students and teachers. Thank you for enhancing our teaching and learning experience and contributing to the growth of our community."
     },
     {
         "id": "r3",
-        "name": "John Lenon",
-        "info": "Sami Raimi, Doctor Strange",
+        "name": "Chuma Henry",
+        "info": "Teacher",
         "img_url": "",
-        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
-
+        "review": "I've found the Tevamuto Foundation to be a treasure trove of educational resources, serving our community exceptionally well. It's a fantastic aid in my teaching endeavors, enabling me to make a positive impact on our local students. The interactive features and well-organized content have been a game-changer in my classroom, thanks to this community-focused initiative."
     },
     {
         "id": "r4",
-        "name": "Arold Schwazganner",
-        "info": "The terminator, Future",
+        "name": "Zikusooka Fred",
+        "info": "Teacher",
         "img_url": "",
-        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
-
+        "review": "The Tevamuto Foundation is a teacher's dream come true, and it benefits our community greatly. The materials and tools it offers have made my job easier and more effective in serving our local students. I appreciate the effort put into supporting educators like me and helping us strengthen our community."
     },
     {
         "id": "r5",
-        "name": "Dead lake",
-        "info": "CEO, Funcom",
+        "name": "Alimpa Michael",
+        "info": "Student",
         "img_url": "",
-        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
-
+        "review": "I can't thank the Tevamuto Foundation enough for the positive impact it's had on our community. It's been an invaluable asset in my studies and the education of my peers. The clarity of information and the variety of resources available have significantly improved our learning experience, contributing to a brighter future for our community."
     },
     {
         "id": "r6",
-        "name": "Hiren Maddara",
-        "info": "Chief dreamer, Big leagues",
+        "name": "Tikabulamu Rebecca",
+        "info": "Student",
         "img_url": "",
-        "review": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vel quo deserunt quos expedita minima incidunt sed tempora, a architecto consectetur reprehenderit, in repellat voluptatum."
-
+        "review": "The Tevamuto Foundation has been a lifeline for me as a student and for our entire community. The user-friendly interface and the wealth of educational content have made my coursework more manageable and enjoyable. Thank you for making learning easier and fostering growth within our community."
+    },
+    {
+        "id": "r7",
+        "name": "Logose Joyce",
+        "info": "Nurse",
+        "img_url": "",
+        "review": "I've had a great experience using the Tevamuto Foundation, and it's made a significant impact on our community's healthcare. It's been a convenient and informative resource for healthcare professionals like myself, positively affecting the health and well-being of our local residents. Keep up the good work in serving our community!"
     }
 ]
